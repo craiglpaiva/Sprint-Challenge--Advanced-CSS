@@ -1,1 +1,24 @@
 // Mixins Here
+
+.btn {
+    max-width: 150px;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: @nav-font;
+    color: white;
+    cursor: pointer;
+  
+    @media @mobile {
+      margin: 0px auto;
+      margin-bottom: 10px;
+    }
+  
+    &:hover {
+      background-color: white;
+      color: @nav-font;
+    }
+
+}
